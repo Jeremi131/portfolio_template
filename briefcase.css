@@ -1,0 +1,172 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;600&display=swap');
+
+:root {
+    --Button: #8e7bef;
+    --Container: #FCDA68;
+    --Text1: #222222;
+    --Text2: #423F40;
+    --Text3: #FFFFFF;
+    --Contact: #f6f2f9;
+    --Body: #fcfcfc;
+    --Menu: #ffcb1f;
+    --navBar: #9d8afd;
+    --menuShow: #9d8afdf6;
+    --Ball: #ffffff;
+    --Scrollbar: hsl(0, 0%, 85%);
+    --ScrollbarThumb: #423F40;
+    --Toogle: linear-gradient(90deg, rgba(78, 106, 227, 1) 0%, rgba(74, 194, 93, 1) 100%);
+}
+
+body.darkmode {
+    --Button: #3c5fcf;
+    --Container: #360b0b;
+    --Text1: #ffffff;
+    --Text2: #e2e2e2;
+    --Text3: #FFFFFF;
+    --Contact: #02020c;
+    --Body: #040413;
+    --Menu: #b30909;
+    --navBar: #202457;
+    --menuShow: #202457f5;
+    --Ball: #02000a;
+    --Scrollbar: #262626;
+    --ScrollbarThumb: #d8d8d8;
+    --Toogle: linear-gradient(90deg, rgba(78, 106, 227, 1) 0%, rgba(74, 194, 93, 1) 100%);
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.ff-Inter {
+    font-family: 'Inter', sans-serif;
+}
+
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
+ul li {
+    padding-top: 2rem;
+}
+
+ul li:active {
+    color: var(--Menu);
+}
+
+
+  
+
+
+body {
+    background-color: var(--Body);
+
+    transition: background-color 0.5s, color 0.5s;
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+    overflow: hidden;
+}
+
+.contacto .back_title {
+    font-size: 32px;
+    color: var(--Text2);
+    text-align: center;
+    font-weight: 600;
+}
+
+.contact {
+    padding: 2rem;
+    display: flex;
+    justify-content: space-between
+}
+
+.images {
+    margin-top: 30px;
+}
+
+.contacto .images img {
+    background-color: var(--Contact);
+    border-radius: 50%;
+    padding: 20px;
+}
+
+.contacto {
+    padding: 1rem;
+}
+
+.contacto .contact_subtittle {
+    color: var(--Text1);
+    font-weight: bold;
+    display: flex;
+    justify-content: space-between;
+}
+
+.contact_subtittle .text_tittle_email {
+    margin-right: 48px;
+}
+
+.contact_subtittle .text_tittle_phone {
+    margin-left: 18px;
+}
+
+.contacto .contact_information {
+    font-weight: 400;
+    font-size: small;
+    color: var(--Text2);
+    display: flex;
+    justify-content: space-between;
+}
+
+.contact_information .phone_number {
+    margin-left: 35px;
+    opacity: 70%;
+}
+
+.contact_information .email {
+    margin-left: 55px;
+    opacity: 70%;
+}
+
+.Git {
+    padding-top: 3rem;
+    text-align: center;
+    color: var(--Text2);
+}
+
+a.cambiar {
+    color: var(--Button);
+}
+
+.End_text {
+    color: var(--Button);
+    margin-top: 50px;
+    display: flex;
+    justify-content: center;
+    gap: 0.3rem;
+}
+
+@media (min-width: 780px) {
+.contacto .back_title {
+    text-align: left;
+    padding-left: 4rem;
+}
+
+.contacto .outline_icons {
+    padding: 0 200px;
+}
+
+.contacto .images {
+    align-self: center;
+}
+
+.contacto .images img {
+    background-color: var(--Contact);
+    border-radius: 15px;
+    padding: 25px;
+}
+
+}
