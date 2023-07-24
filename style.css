@@ -268,7 +268,24 @@ a .menu_nav {
 }
 
 
+.return{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 65px;
+    height: 65px;
+    border-radius: 50%;
+    background-color: var(--Button);
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    z-index: 10;
+}
 
+.icon_return{
+    font-size: 50px;
+    color: var(--Text3);
+}
 
 
 /* --------------------------------------------H O M E -------------------------------------------- */
@@ -391,7 +408,6 @@ a .menu_nav {
 .text_btn{
     font-size: 18px;
 }
-
 
 
 
@@ -533,6 +549,7 @@ a .menu_nav {
     color: var(--Text2);
     text-align: center;
     font-weight: 600;
+    margin-bottom: 30px;
 }
 
 .contacto {
